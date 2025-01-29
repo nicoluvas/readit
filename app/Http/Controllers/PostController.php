@@ -14,7 +14,7 @@ class PostController extends Controller
     {
         $title = $request->input("title");
 
-        $posts = Post::when($title, fn($query, $title) => $query->title($title))->get();
+        $posts = Post::when($title, fn($query, $title) => $query->title($title))->paginate(10);
 
         return view("index", compact("posts"));
     }
