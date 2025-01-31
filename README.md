@@ -1,5 +1,22 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"> <b> readit </b> <br> <label> by mura <label></p>
 
-## readit
-all made in laravel
+## installation
 
+### dependencies
+- docker desktop
+- php 
+- laravel
+  
+```bash
+    # start container
+    $ docker compose up
+
+    # feed the database
+    $ php artisan migrate --seed
+
+    # run the app
+    $ php artisan serve
+```
+
+## license
+s/o [MIT license](https://opensource.org/licenses/MIT)
