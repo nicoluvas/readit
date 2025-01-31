@@ -12,4 +12,8 @@ class Post extends Model
     {
         return $this->hasMany(Answer::class);
     }
+    public function author()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

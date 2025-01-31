@@ -16,7 +16,7 @@ class PostController extends Controller
 
         $posts = Post::when($title, fn($query, $title) => $query->title($title))->paginate(10);
 
-        return view("index", compact("posts"));
+        return view("posts.index", compact("posts"));
     }
 
     /**
@@ -38,9 +38,9 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Post $post)
     {
-        //
+        return view('posts.show', compact('post'));
     }
 
     /**

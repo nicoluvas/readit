@@ -12,4 +12,8 @@ class Answer extends Model
     {
         return $this->belongsTo(Post::class);
     }
+    public function author()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
