@@ -7,4 +7,5 @@
     <p>
         {{ $post->content }}
     </p>
+    AAAAAAAAAAAAAAAAAAAAAA
 @endsection

@@ -11,7 +11,7 @@
                 <div class="post-item">
                     <div class="flex flex-wrap items-center justify-between">
                         <div class="w-full flex-grow sm:w-auto">
-                            <a href="{{ route('show', $post) }}" class="post-title">{{ $post->title }}</a>
+                            <a href="{{ route('posts.show', $post) }}" class="post-title">{{ $post->title }}</a>
                             {{-- <span class="post-author">by {{ $post->author }}</span> --}}
                         </div>
                     </div>
