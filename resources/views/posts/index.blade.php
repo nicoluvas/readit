@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+    <p>hello {{ Auth::user()->name }}!</p>
+
     <h1 class="mb-10 text-2xl">readit</h1>
 
     <form></form>

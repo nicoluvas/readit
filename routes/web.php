@@ -16,6 +16,6 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::resource('/posts', PostController::class);
+Route::resource('/posts', PostController::class)->middleware('auth');
 
 Route::resource('/posts/{post}/answers', AnswerController::class);
